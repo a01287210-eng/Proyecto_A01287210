@@ -1,8 +1,22 @@
 #include <iostream>
+#include "Personaje.hpp"
 using namespace std;
+
 
 int main() 
 {
-  cout << "Hello World"<< endl;
-  return 0;
+
+    Personaje heroe(100, 30, 5);
+    Personaje enemigo(100, 25, 3);
+
+    heroe.imprimir();
+    enemigo.imprimir();
+
+    heroe.atacar(enemigo);
+
+    heroe.imprimir();
+    enemigo.imprimir();
+
+    return 0;
+
 }
