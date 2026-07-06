@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
  
-class Unidad {
+class Personaje {
 private:
     int vida;
     int salud;
@@ -9,14 +9,14 @@ private:
     int nivel;
  
 public:
-    Unidad() {
+    Personaje() {
         vida = 100;
         salud = 100;
         ataque = 10;
         nivel = 1;
     }
  
-    Unidad(int v, int a, int n) {
+    Personaje(int v, int a, int n) {
         vida = v;
         salud = v;
         ataque = a;
